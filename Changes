@@ -1,0 +1,14 @@
+Revision history for CGI-Application-Plugin-ViewCode
+
+0.03    July 12, 2005
+    - Better test coverage (98%)
+    - fail better if the user's mode_param() returns a reference
+    - doc fixes
+
+0.02    June 25, 2005
+    - Renamed 'ViewCode' from 'ViewSource'
+    - Removed hard coding of run mode param ('rm') into links
+
+0.01    June 25, 2005
+    - First version, released on an unsuspecting world.
+
