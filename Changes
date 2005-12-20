@@ -1,5 +1,12 @@
 Revision history for CGI-Application-Plugin-ViewCode
 
+1.00
+    - Added view_pod run mode to allow just the viewing of the formatted
+        POD using Pod::Xhtml
+
+0.04 
+    - Now works with CGI::Application::Plugin::DevPopup
+
 0.03    July 12, 2005
     - Better test coverage (98%)
     - fail better if the user's mode_param() returns a reference

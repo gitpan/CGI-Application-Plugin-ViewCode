@@ -1,6 +1,6 @@
 ---
 name: CGI-Application-Plugin-ViewCode
-version: 0.03
+version: 1.00
 author:
   - Michael Peters <mpeters@plusthree.com>
 abstract: View the source of the running application
@@ -9,10 +9,12 @@ resources:
   license: http://dev.perl.org/licenses/
 requires:
   CGI::Application: 4
+  Pod::Xhtml: 1
   Syntax::Highlight::Perl::Improved: 1
+  Test::LongString: 0
   Test::More: 0
 provides:
   CGI::Application::Plugin::ViewCode:
     file: lib/CGI/Application/Plugin/ViewCode.pm
-    version: 0.03
+    version: 1.00
 generated_by: Module::Build version 0.2703

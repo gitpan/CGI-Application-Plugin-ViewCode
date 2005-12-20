@@ -11,7 +11,9 @@ my $builder = Module::Build->new(
     requires => {
         'Test::More'                        => 0,
         'CGI::Application'                  => 4.00,
-        'Syntax::Highlight::Perl::Improved' => 1.0 
+        'Syntax::Highlight::Perl::Improved' => 1.0,
+        'Pod::Xhtml'                        => 1.0,
+        'Test::LongString'                  => 0,
     },
     create_makefile_pl  => 'traditional',
     create_readme       => 1,

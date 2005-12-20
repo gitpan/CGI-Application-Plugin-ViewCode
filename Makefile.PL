@@ -10,8 +10,10 @@ WriteMakefile
           'PM' => undef,
           'PREREQ_PM' => {
                            'Test::More' => 0,
+                           'Test::LongString' => 0,
                            'CGI::Application' => '4',
-                           'Syntax::Highlight::Perl::Improved' => '1'
+                           'Syntax::Highlight::Perl::Improved' => '1',
+                           'Pod::Xhtml' => '1'
                          }
         )
 ;
