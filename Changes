@@ -1,5 +1,9 @@
 Revision history for CGI-Application-Plugin-ViewCode
 
+1.01
+    - No code changes, just cleaned up Makefile.PL and test scripts
+        to handle installation under CPAN
+
 1.00
     - Added view_pod run mode to allow just the viewing of the formatted
         POD using Pod::Xhtml

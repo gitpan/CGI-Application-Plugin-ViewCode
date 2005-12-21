@@ -1,6 +1,7 @@
 use Test::More;
 use Test::LongString;
 use CGI;
+use lib 't/lib';
 use MyBase::MyApp;
 use strict;
 

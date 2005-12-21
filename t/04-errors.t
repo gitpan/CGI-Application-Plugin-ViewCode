@@ -1,5 +1,6 @@
 use Test::More;
 use CGI;
+use lib 't/lib';
 use MyBase::MyApp;
 use strict;
 

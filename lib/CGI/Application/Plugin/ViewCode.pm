@@ -8,7 +8,7 @@ CGI::Application::Plugin::ViewCode - View the source of the running application
 
 =cut
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 # DEFAULT_STYLES taken from Apache::Syntax::Highlight::Perl by Enrico Sorcinelli
 our %DEFAULT_STYLES = (
