@@ -18,7 +18,7 @@ $ENV{'CGI_APP_RETURN_ONLY'} = 1;
     my $output = $app->run();
     unlike($output, qr/String \{ color:#000000/);
     like($output, qr/<span class="String">/);
-    like($output, qr/<span class="LineNumber">1/);
+    like($output, qr/<span class="LineNumber"><a name="1">1/);
     like($output, qr/<span class="Comment_POD">/);
 }
 
@@ -33,7 +33,7 @@ $ENV{'CGI_APP_RETURN_ONLY'} = 1;
     my $output = $app->run();
     like($output, qr/String \{ color:#000000/);
     like($output, qr/<span class="String">/);
-    like($output, qr/<span class="LineNumber">/);
+    like($output, qr/<span class="LineNumber"><a name="1">1/);
     like($output, qr/<span class="Comment_POD">/);
 }
 
@@ -49,7 +49,7 @@ $ENV{'CGI_APP_RETURN_ONLY'} = 1;
     my $output = $app->run();
     like($output, qr/String \{ color:#000000/);
     like($output, qr/<span class="String">/);
-    unlike($output, qr/<span class="LineNumber">/);
+    unlike($output, qr/<span class="LineNumber"><a name="1">1/);
     like($output, qr/<span class="Comment_POD">/);
 }
 
@@ -66,7 +66,7 @@ $ENV{'CGI_APP_RETURN_ONLY'} = 1;
     my $output = $app->run();
     like($output, qr/String \{ color:#000000/);
     like($output, qr/<span class="String">/);
-    unlike($output, qr/<span class="LineNumber">/);
+    unlike($output, qr/<span class="LineNumber"><a name="1">1/);
     unlike($output, qr/<span class="Comment_POD">/);
 }
 

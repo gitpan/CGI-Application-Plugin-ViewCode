@@ -1,6 +1,6 @@
 ---
 name: CGI-Application-Plugin-ViewCode
-version: 1.01
+version: 1.02
 author:
   - Michael Peters <mpeters@plusthree.com>
 abstract: View the source of the running application
@@ -16,5 +16,5 @@ requires:
 provides:
   CGI::Application::Plugin::ViewCode:
     file: lib/CGI/Application/Plugin/ViewCode.pm
-    version: 1.01
+    version: 1.02
 generated_by: Module::Build version 0.2703

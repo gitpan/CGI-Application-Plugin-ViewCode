@@ -15,7 +15,7 @@ my $builder = Module::Build->new(
         'Pod::Xhtml'                        => 1.0,
         'Test::LongString'                  => 0,
     },
-    create_makefile_pl  => 'traditional',
+    create_makefile_pl  => 'small',
     create_readme       => 1,
 );
 

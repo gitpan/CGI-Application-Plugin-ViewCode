@@ -1,5 +1,10 @@
 Revision history for CGI-Application-Plugin-ViewCode
 
+1.02
+    - Added ability to link to specific lines with an anchor tag
+    - Changed Build.PL create_makefile_pl option to 'small' so I don't
+        have to deal with EU::MM install details as well
+
 1.01
     - No code changes, just cleaned up Makefile.PL and test scripts
         to handle installation under CPAN

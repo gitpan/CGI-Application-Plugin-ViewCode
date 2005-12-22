@@ -8,7 +8,7 @@ CGI::Application::Plugin::ViewCode - View the source of the running application
 
 =cut
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 # DEFAULT_STYLES taken from Apache::Syntax::Highlight::Perl by Enrico Sorcinelli
 our %DEFAULT_STYLES = (
@@ -53,7 +53,7 @@ In your CGI::Application based class
 Then you can view your module's source (or pod) as it's running by changing the url
 
     ?rm=view_code
-    ?rm=view_code&line_no=1
+    ?rm=view_code#215
     ?rm=view_code&pod=0&line_no=0
     ?rm=view_code&module=CGI-Application
 
@@ -88,12 +88,19 @@ is C<on> or C<off>. By default it is C<on>.
 =item line_no
 
 Boolean indicates whether the viewing of line numbers is C<on> or C<off>. By default it is C<on>.
+It C<line_no> is on, you can also specify which line number you want to see by adding an anchor
+to the link:
+
+    ?rm=view_code#215
+
+This will take you immediately to line 215 of the current application module.
 
 =item pod
 
 Boolean indicates whether POD is seen or not. By default it is seen>.
 
 =back
+
 
 =head2 view_pod
 
@@ -212,7 +219,7 @@ sub _view_code {
         if( $options{line_no} ) {
             my $i = 1;
             @lines = map { 
-                (qq(<span class="LineNumber">) . $i++ . qq(:</span>&nbsp;). $_) 
+                (qq(<span class="LineNumber"><a name="$i">) . $i++ . qq(:</a></span>&nbsp;). $_) 
             } @lines;
         }
 

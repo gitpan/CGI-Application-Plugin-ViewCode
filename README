@@ -11,7 +11,7 @@ SYNOPSIS
     changing the url
 
         ?rm=view_code
-        ?rm=view_code&line_no=1
+        ?rm=view_code#215
         ?rm=view_code&pod=0&line_no=0
         ?rm=view_code&module=CGI-Application
 
@@ -43,7 +43,14 @@ INTERFACE
 
     line_no
         Boolean indicates whether the viewing of line numbers is `on' or
-        `off'. By default it is `on'.
+        `off'. By default it is `on'. It `line_no' is on, you can also
+        specify which line number you want to see by adding an anchor to the
+        link:
+
+            ?rm=view_code#215
+
+        This will take you immediately to line 215 of the current
+        application module.
 
     pod Boolean indicates whether POD is seen or not. By default it is
         seen>.
